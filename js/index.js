@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1": "DOM Is Awesome",
+    "h1": "DOM <br> Is <br> Awesome",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -66,4 +66,29 @@ let link6 = document.querySelector("a:nth-child(6)")
 link6.textContent = siteContent["nav"]["nav-item-6"]
 
 let title = document.querySelector('h1')
-title.textContent = siteContent["cta"]["h1"]
+title.innerHTML = siteContent["cta"]["h1"]
+
+let button1 = document.querySelector('button')
+button1.textContent = siteContent["cta"]["button"]
+
+let topLefth4 = document.querySelector('h4:first-child')
+topLefth4.textContent = siteContent["main-content"]["features-h4"]
+
+let allh4s = document.querySelectorAll('h4')
+allh4s[1].textContent = siteContent["main-content"]["about-h4"]
+allh4s[2].textContent = siteContent["main-content"]["services-h4"]
+allh4s[3].textContent = siteContent["main-content"]["product-h4"]
+allh4s[4].textContent = siteContent["main-content"]["vision-h4"]
+allh4s[5].textContent = siteContent["contact"]["contact-h4"]
+
+let allps = document.querySelectorAll('p')
+allps[0].textContent = siteContent["main-content"]["features-content"]
+allps[1].textContent = siteContent["main-content"]["about-content"]
+allps[2].textContent = siteContent["main-content"]["services-content"]
+allps[3].textContent = siteContent["main-content"]["product-content"]
+allps[4].textContent = siteContent["main-content"]["vision-content"]
+allps[5].textContent = siteContent["contact"]["address"]
+allps[6].textContent = siteContent["contact"]["phone"]
+allps[7].textContent = siteContent["contact"]["email"]
+allps[8].textContent = siteContent["footer"]["copyright"]
+
