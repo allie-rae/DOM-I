@@ -76,6 +76,13 @@ title.innerHTML = siteContent["cta"]["h1"]
 
 let button1 = document.querySelector('button')
 button1.textContent = siteContent["cta"]["button"]
+document.querySelector('button').style.backgroundImage = "linear-gradient(red, yellow, green, blue)" 
+document.querySelector('button').style.border = "0px solid black"
+document.querySelector('button').style.borderRadius = "10px"
+document.querySelector('button').style.height = "50px"
+document.querySelector('button').style.width = "200px"
+document.querySelector('button').style.fontSize = "20px"
+document.querySelector('button').style.fontWeight = "600"
 
 let topLefth4 = document.querySelector('h4:first-child')
 topLefth4.textContent = siteContent["main-content"]["features-h4"]
