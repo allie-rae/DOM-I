@@ -49,21 +49,27 @@ middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 let link1 = document.querySelector("a:first-child")
 link1.textContent = siteContent["nav"]["nav-item-1"]
+document.querySelector("a:first-child").style.color = "red" 
 
 let link2 = document.querySelector("a:nth-child(2)")
 link2.textContent = siteContent["nav"]["nav-item-2"]
+document.querySelector("a:nth-child(2)").style.color = "orange"
 
 let link3 = document.querySelector("a:nth-child(3)")
 link3.textContent = siteContent["nav"]["nav-item-3"]
+document.querySelector("a:nth-child(3)").style.color = "#CCCC00"
 
 let link4 = document.querySelector("a:nth-child(4)")
 link4.textContent = siteContent["nav"]["nav-item-4"]
+document.querySelector("a:nth-child(4)").style.color = "green"
 
 let link5 = document.querySelector("a:nth-child(5)")
 link5.textContent = siteContent["nav"]["nav-item-5"]
+document.querySelector("a:nth-child(5)").style.color = "blue"
 
 let link6 = document.querySelector("a:nth-child(6)")
 link6.textContent = siteContent["nav"]["nav-item-6"]
+document.querySelector("a:nth-child(6)").style.color = "purple"
 
 let title = document.querySelector('h1')
 title.innerHTML = siteContent["cta"]["h1"]
@@ -91,4 +97,5 @@ allps[5].textContent = siteContent["contact"]["address"]
 allps[6].textContent = siteContent["contact"]["phone"]
 allps[7].textContent = siteContent["contact"]["email"]
 allps[8].textContent = siteContent["footer"]["copyright"]
+
 
